@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    border: 0;
+}
+
+.h1 {
+    font-size: 1.5em;
+}
+
+.main_div {
+    width: 80%;
+    height: 80vh;
+    display: grid;
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px 5px rgb(97, 108, 111);
+    grid-template-rows: 15% 85%;
+    grid-template-columns: 35% 30% 35%;
+}
+
+.get-data {
+    height: 80%;
+    grid-column: 1/-1;
+    padding: 2%;
+}
+
+.get-data-flex {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.get-data-element {
+    padding: 1%;
+    border: None;
+}
+
+.select-box {
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(90deg, rgba(44, 51, 53, 1) 37%, rgba(97, 108, 111, 1) 100%);
+    color: whitesmoke;
+}
+
+.des-box {
+    width: 30%;
+    background-color: #dae0e2;
+    border: 1px solid #dae0e2;
+    outline: none;
+}
+
+.amt-box {
+    width: 20%;
+    background-color: rgb(230, 234, 235);
+    border: 1px solid rgb(230, 234, 235);
+    outline: none;
+}
+
+.submit-button {
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(90deg, rgba(44, 51, 53, 1) 37%, rgba(97, 108, 111, 1) 100%);
+    color: whitesmoke;
+}
+
+.log {
+    overflow: scroll;
+}
+
+.stats-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.cd {
+    padding: 10%;
+    border-radius: 6px;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.calender {
+    margin-left: 10%;
+}
+
+.cal-income-div {
+    background-color: rgb(143, 238, 236);
+    box-shadow: 0px 2px 11px -1px rgb(143, 238, 236);
+    color: white;
+    text-shadow: 0px 2px 3px #616c6f;
+    font-family: "Lato", sans-serif;
+
+}
+
+.cal-money-div {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(245, 201, 107);
+    box-shadow: 0px 2px 11px -1px rgb(245, 201, 107);
+    color: white;
+    text-shadow: 0px 2px 3px #616c6f;
+}
+
+.cal-expense-div {
+    background-color: rgb(250, 142, 125);
+    box-shadow: 0px 2px 11px -1px rgb(250, 142, 125);
+    color: white;
+    text-shadow: 0px 2px 3px #616c6f;
+    font-family: "Lato", sans-serif;
+    font-size: 0.8em;
+}
+
+.income-div-container,
+.expense-div-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.ie-div {
+    margin: 1%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 4%;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0px 2px 3px #616c6f;
+    background: linear-gradient(90deg, rgba(2, 108, 47, 1) 8%, rgba(46, 204, 114, 1) 62%);
+    color: white;
+}
+
+.ie-sno,
+.ie-value {
+    font-size: 0.8em;
+}
+
+.ie-bar-des {
+    flex-grow: 2;
+    max-width: inherit;
+    overflow: hidden;
+    font-size: 0.8em;
+}
+
+.ie-cross-btn {
+    cursor: pointer;
+}
+
+
+/* Adding media query */
+@media (max-width: 672px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 520px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+}
+
+@media (max-width : 520px) {
+    .main_div {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        overflow: scroll;
+        width: 100%;
+        height: 100vh;
+        border: none;
+        box-shadow: none;
+    }
+
+    .get-data {
+        height: 100%;
+    }
+
+    .get-data-flex {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .get-data-element {
+        width: 85%;
+        text-align: center;
+    }
+
+    .select-box,
+    .submit-button {
+        border-radius: 0;
+    }
+
+    .stats-div {
+        grid-row: 2/3;
+    }
+
+    .log {
+        height: 30vh;
+        overflow: scroll;
+        margin-top: 5%;
+    }
+}

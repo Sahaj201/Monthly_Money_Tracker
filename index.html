@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="get-data">
+            <div class="get-data-flex">
+                <select class="select-box get-data-element" name id>
+                    <option value="+" selected>+</option>
+                    <option value="-">-</option>
+                </select>
+                <input class="des-box get-data-element" type="text" placeholder="Description">
+                <input class="amt-box get-data-element" type="number" placeholder="Amount">
+                <button class="submit-button get-data-element"><i class="fa fa-plus-circle" style="padding: 2px;"></i>
+                    Add</button>
+            </div>
+        </div>
+        <div class="income-div log">
+            <h1 style="color: #26ae60;font-weight: bold;text-align: center;">All INCOMES</h1>
+            <div class="income-div-container">
+
+            </div>
+
+        </div>
+        <div class="stats-div">
+            <div>
+                <input class="cd calender" type="month" style="padding: 2%">
+            </div>
+            <div class="cd cal-income-div">
+                <h1 style="font-size: 1.5em;">INCOME <i class="fa fa-smile-o"> </i></h1>
+                <h2 class="income-cal-div">0</h2>
+            </div>
+            <div class="cd cal-money-div">
+                <i class="fa fa-money fa-2x"> </i>
+                <h1>Money Left</h1>
+                <h2 class="total-div">0</h2>
+            </div>
+            <div class="cd cal-expense-div">
+                <h1>Expense <i class="fa fa-frown-o"> </i></h1>
+                <h2 class="expense-cal-div">0</h2>
+            </div>
+
+        </div>
+        <div class="expense-div log">
+            <h1 style="color: #BA2F16;font-weight: bold;text-align: center;">All EXPENSES</h1>
+            <div class="expense-div-container"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
